@@ -15,12 +15,13 @@ const bike = [
   },
 ];
 
-// creo una variabile fuori dove prendo l'indice dell'objt
+// creo una variabile fuori settata a null
 let lightBike = null;
 // faccio cilare gli elementi
 for (let i = 0; i < bike.length; i++) {
   console.log(bike[i]);
-// se la chiave peso dell'oggetto bike[i] è inferiore alla ligthbike peso
+
+// se variabile null o  la chiave peso dell'oggetto bike[i] è inferiore alla ligthbike peso
   if (lightBike == null ||  lightBike.peso > bike[i].peso ) {
     // la bike ligth diventa questa
     lightBike = bike[i];
