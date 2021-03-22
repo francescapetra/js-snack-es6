@@ -13,7 +13,10 @@
 // );
 // console.log(arrayN);
 // console.log(nuovoArray);
-//
+
+
+
+
 // const arrayN = ["rosso", "blu", "verde", "giallo", "bianco"];
 //
 // const risultato = miaFunzione(arrayN,0,2);
@@ -46,6 +49,8 @@ console.log(arrayFilter);
 
 // ridotta
 // const arrayFilter = arrayN.filter((element,index)=> min<= index && max >= index);
+
+
 
 // var new = filter(name, min, max);
 //
