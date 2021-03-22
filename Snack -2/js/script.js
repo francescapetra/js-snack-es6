@@ -30,19 +30,29 @@ function randomGeneratore(min, max){
   return numeriCpu;
 }
 // ciclo
-for (let i = 0; i < squadre.length; i++) {
-  squadre[i].punti = randomGeneratore(1,10);
-  squadre[i].falli = randomGeneratore(1,10);
-}
-// nuovoArray
-const nuovoArray = [];
-
-for (let i = 0; i < squadre.length; i++) {
-
-const {nome,falli} = squadre[i];
-nuovoArray.push({
-  nome: nome,
-  falli :falli,
+const nuoveSquadre = squadre.map((element,index) =>{
+  element.punti = randomGeneratore(0,5);
+  element.falli = randomGeneratore (0,10);
+  const {nome,falli} = element; 
+  return {nome,falli};
 });
-}
-console.log(nuovoArray);
+console.log(nuoveSquadre);
+
+
+// primo metodo
+// for (let i = 0; i < squadre.length; i++) {
+//   squadre[i].punti = randomGeneratore(1,10);
+//   squadre[i].falli = randomGeneratore(1,10);
+// }
+// // nuovoArray
+// const nuovoArray = [];
+//
+// for (let i = 0; i < squadre.length; i++) {
+//
+// const {nome,falli} = squadre[i];
+// nuovoArray.push({
+//   nome: nome,
+//   falli :falli,
+// });
+// }
+// console.log(nuovoArray);
